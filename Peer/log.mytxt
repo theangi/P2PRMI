@@ -1,0 +1,840 @@
+2015-03-27 11:25:41 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:25:41 divina_commedia.txt
+2015-03-27 11:25:41 pippo.txt
+2015-03-27 11:25:41 immagine.jpg
+2015-03-27 11:25:41 Avvio server RMI...
+2015-03-27 11:25:41 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 11:25:41 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 11:27:41 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:27:41 divina_commedia.txt
+2015-03-27 11:27:41 pippo.txt
+2015-03-27 11:27:41 immagine.jpg
+2015-03-27 11:27:41 Avvio server RMI...
+2015-03-27 11:27:41 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 11:27:41 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 11:29:15 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:29:15 divina_commedia.txt
+2015-03-27 11:29:15 pippo.txt
+2015-03-27 11:29:15 immagine.jpg
+2015-03-27 11:29:15 Avvio server RMI...
+2015-03-27 11:29:15 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 11:29:15 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 11:29:22 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:29:22 rfc6824_MPTCP.pdf
+2015-03-27 11:29:22 pippo.txt
+2015-03-27 11:29:22 Avvio server RMI...
+2015-03-27 11:29:22 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 11:29:22 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 11:29:28 LOOP: ho trovato 2 hosts remoti
+2015-03-27 11:29:29 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 11:29:30 LOOP: ho trovato 2 hosts remoti
+2015-03-27 11:29:31 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 11:29:31 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 11:29:31 Contatto nodo1 per scaricare il file
+2015-03-27 11:29:31 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 11:29:31 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 11:29:31 FATTO!!!! pippo.txt scaricato con successo
+2015-03-27 11:29:31 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 11:29:33 Voglio fare qualcosa con immagine.jpg sulla lista jListLocalFiles
+2015-03-27 11:29:33 Di preciso voglio DOWNLOAD del file remoto immagine.jpg nel file locale database_nodo2/immagine.jpg
+2015-03-27 11:29:33 Contatto nodo1 per scaricare il file
+2015-03-27 11:29:33 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 11:29:33 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 11:29:33 FATTO!!!! immagine.jpg scaricato con successo
+2015-03-27 11:29:37 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 11:29:37 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:29:37 Errore click file remoti!
+2015-03-27 11:29:37 L'ultima volta era selezionato il 2
+2015-03-27 11:29:47 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:29:47 Errore click file remoti!
+2015-03-27 11:29:47 L'ultima volta era selezionato il 2
+2015-03-27 11:30:39 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:30:39 divina_commedia.txt
+2015-03-27 11:30:39 pippo.txt
+2015-03-27 11:30:39 immagine.jpg
+2015-03-27 11:30:39 Avvio server RMI...
+2015-03-27 11:30:39 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 11:30:39 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 11:30:42 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:30:42 rfc6824_MPTCP.pdf
+2015-03-27 11:30:42 pippo.txt
+2015-03-27 11:30:42 immagine.jpg
+2015-03-27 11:30:42 Avvio server RMI...
+2015-03-27 11:30:42 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 11:30:42 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 11:30:45 LOOP: ho trovato 2 hosts remoti
+2015-03-27 11:30:48 LOOP: ho trovato 2 hosts remoti
+2015-03-27 11:30:49 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 11:30:52 Voglio fare qualcosa con immagine.jpg sulla lista jListLocalFiles
+2015-03-27 11:30:52 Di preciso voglio DOWNLOAD del file remoto immagine.jpg nel file locale database_nodo2/immagine.jpg
+2015-03-27 11:30:52 Contatto nodo1 per scaricare il file
+2015-03-27 11:30:52 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 11:30:52 FATTO!!!! immagine.jpg scaricato con successo
+2015-03-27 11:30:52 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 11:30:56 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 11:30:56 Di preciso voglio UPLOAD del file locale database_nodo2/database_nodo2/rfc6824_MPTCP.pdf nel file remoto database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 11:30:58 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:30:58 Errore click file remoti!
+2015-03-27 11:30:58 L'ultima volta era selezionato il 2
+2015-03-27 11:31:08 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:31:08 Errore click file remoti!
+2015-03-27 11:31:08 L'ultima volta era selezionato il 2
+2015-03-27 11:31:18 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:31:18 Errore click file remoti!
+2015-03-27 11:31:18 L'ultima volta era selezionato il 2
+2015-03-27 11:31:28 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:31:28 Errore click file remoti!
+2015-03-27 11:31:28 L'ultima volta era selezionato il 2
+2015-03-27 11:31:38 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:31:38 Errore click file remoti!
+2015-03-27 11:31:38 L'ultima volta era selezionato il 2
+2015-03-27 11:31:48 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:31:48 Errore click file remoti!
+2015-03-27 11:31:48 L'ultima volta era selezionato il 2
+2015-03-27 11:31:58 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:31:58 Errore click file remoti!
+2015-03-27 11:31:58 L'ultima volta era selezionato il 2
+2015-03-27 11:32:08 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:32:08 Errore click file remoti!
+2015-03-27 11:32:08 L'ultima volta era selezionato il 2
+2015-03-27 11:32:18 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:32:18 Errore click file remoti!
+2015-03-27 11:32:18 L'ultima volta era selezionato il 2
+2015-03-27 11:32:28 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:32:28 Errore click file remoti!
+2015-03-27 11:32:28 L'ultima volta era selezionato il 2
+2015-03-27 11:32:38 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:32:38 Errore click file remoti!
+2015-03-27 11:32:38 L'ultima volta era selezionato il 2
+2015-03-27 11:32:48 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:32:48 Errore click file remoti!
+2015-03-27 11:32:48 L'ultima volta era selezionato il 2
+2015-03-27 11:32:58 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:32:58 Errore click file remoti!
+2015-03-27 11:32:58 L'ultima volta era selezionato il 2
+2015-03-27 11:33:08 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:33:08 Errore click file remoti!
+2015-03-27 11:33:08 L'ultima volta era selezionato il 2
+2015-03-27 11:33:18 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:33:18 Errore click file remoti!
+2015-03-27 11:33:18 L'ultima volta era selezionato il 2
+2015-03-27 11:33:28 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:33:28 Errore click file remoti!
+2015-03-27 11:33:28 L'ultima volta era selezionato il 2
+2015-03-27 11:33:38 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:33:38 Errore click file remoti!
+2015-03-27 11:33:38 L'ultima volta era selezionato il 2
+2015-03-27 11:33:48 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:33:48 Errore click file remoti!
+2015-03-27 11:33:48 L'ultima volta era selezionato il 2
+2015-03-27 11:33:58 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:33:58 Errore click file remoti!
+2015-03-27 11:33:58 L'ultima volta era selezionato il 2
+2015-03-27 11:34:08 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:34:08 Errore click file remoti!
+2015-03-27 11:34:08 L'ultima volta era selezionato il 2
+2015-03-27 11:34:18 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:34:18 Errore click file remoti!
+2015-03-27 11:34:18 L'ultima volta era selezionato il 2
+2015-03-27 11:34:28 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:34:28 Errore click file remoti!
+2015-03-27 11:34:28 L'ultima volta era selezionato il 2
+2015-03-27 11:34:38 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:34:38 Errore click file remoti!
+2015-03-27 11:34:38 L'ultima volta era selezionato il 2
+2015-03-27 11:34:48 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:34:48 Errore click file remoti!
+2015-03-27 11:34:48 L'ultima volta era selezionato il 2
+2015-03-27 11:34:58 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:34:58 Errore click file remoti!
+2015-03-27 11:34:58 L'ultima volta era selezionato il 2
+2015-03-27 11:35:08 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:35:08 Errore click file remoti!
+2015-03-27 11:35:08 L'ultima volta era selezionato il 2
+2015-03-27 11:35:18 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:35:18 Errore click file remoti!
+2015-03-27 11:35:18 L'ultima volta era selezionato il 2
+2015-03-27 11:35:28 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:35:28 Errore click file remoti!
+2015-03-27 11:35:28 L'ultima volta era selezionato il 2
+2015-03-27 11:35:29 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:35:29 divina_commedia.txt
+2015-03-27 11:35:29 pippo.txt
+2015-03-27 11:35:29 immagine.jpg
+2015-03-27 11:35:29 Avvio server RMI...
+2015-03-27 11:35:29 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 11:35:29 Lato server, Eseguo bind() con nome nodo3
+2015-03-27 11:35:37 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:35:37 divina_commedia.txt
+2015-03-27 11:35:37 pippo.txt
+2015-03-27 11:35:37 immagine.jpg
+2015-03-27 11:35:37 Avvio server RMI...
+2015-03-27 11:35:37 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 11:35:37 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 11:35:44 Vediamo che files ho a disposizione da condividere
+2015-03-27 11:35:44 rfc6824_MPTCP.pdf
+2015-03-27 11:35:44 pippo.txt
+2015-03-27 11:35:44 immagine.jpg
+2015-03-27 11:35:44 Avvio server RMI...
+2015-03-27 11:35:44 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 11:35:44 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 11:35:49 LOOP: ho trovato 2 hosts remoti
+2015-03-27 11:35:50 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 11:35:52 LOOP: ho trovato 2 hosts remoti
+2015-03-27 11:35:54 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 11:35:54 Errore selezione file locale
+2015-03-27 11:35:59 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:36:00 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 11:36:00 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 11:36:00 Contatto nodo1 per scaricare il file
+2015-03-27 11:36:00 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 11:36:00 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 11:36:00 FATTO!!!! pippo.txt scaricato con successo
+2015-03-27 11:36:00 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 11:36:08 Voglio fare qualcosa con divina_commedia.txt sulla lista jListLocalFiles
+2015-03-27 11:36:08 Di preciso voglio DOWNLOAD del file remoto divina_commedia.txt nel file locale database_nodo2/divina_commedia.txt
+2015-03-27 11:36:08 Contatto nodo1 per scaricare il file
+2015-03-27 11:36:08 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 11:36:08 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 11:36:08 FATTO!!!! divina_commedia.txt scaricato con successo
+2015-03-27 11:36:09 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:36:09 Errore click file remoti!
+2015-03-27 11:36:09 L'ultima volta era selezionato il 0
+2015-03-27 11:36:12 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 11:36:12 Di preciso voglio UPLOAD del file locale database_nodo2/database_nodo2/rfc6824_MPTCP.pdf nel file remoto database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 11:36:12 Errore! remote è nullo
+2015-03-27 11:36:19 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:36:19 Errore click file remoti!
+2015-03-27 11:36:19 L'ultima volta era selezionato il 0
+2015-03-27 11:36:29 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 11:36:29 Errore click file remoti!
+2015-03-27 11:36:29 L'ultima volta era selezionato il 0
+2015-03-27 14:47:14 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:47:14 divina_commedia.txt
+2015-03-27 14:47:14 pippo.txt
+2015-03-27 14:47:14 immagine.jpg
+2015-03-27 14:47:14 Avvio server RMI...
+2015-03-27 14:47:14 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 14:47:14 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 14:47:17 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:47:17 divina_commedia.txt
+2015-03-27 14:47:17 rfc6824_MPTCP.pdf
+2015-03-27 14:47:17 pippo.txt
+2015-03-27 14:47:17 Avvio server RMI...
+2015-03-27 14:47:17 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 14:47:17 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 14:47:20 LOOP: ho trovato 2 hosts remoti
+2015-03-27 14:47:23 LOOP: ho trovato 2 hosts remoti
+2015-03-27 14:47:36 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 14:47:41 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 14:47:41 Errore selezione file locale
+2015-03-27 14:47:43 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:47:43 Errore click file remoti!
+2015-03-27 14:47:43 L'ultima volta era selezionato il 1
+2015-03-27 14:47:43 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 14:47:43 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 14:47:43 Contatto nodo1 per scaricare il file
+2015-03-27 14:47:43 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 14:47:43 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 14:47:43 FATTO!!!! pippo.txt scaricato con successo
+2015-03-27 14:47:43 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 14:47:50 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 14:47:50 Di preciso voglio UPLOAD del file locale database_nodo2/database_nodo2/rfc6824_MPTCP.pdf nel file remoto database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 14:47:50 Errore! remote è nullo
+2015-03-27 14:47:53 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:47:53 Errore click file remoti!
+2015-03-27 14:47:53 L'ultima volta era selezionato il 1
+2015-03-27 14:52:15 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:52:15 divina_commedia.txt
+2015-03-27 14:52:15 pippo.txt
+2015-03-27 14:52:15 immagine.jpg
+2015-03-27 14:52:15 Avvio server RMI...
+2015-03-27 14:52:15 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 14:52:15 Lato server, Eseguo bind() con nome nodo3
+2015-03-27 14:52:18 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:52:18 Avvio server RMI...
+2015-03-27 14:52:18 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 14:52:18 Lato server, Eseguo bind() con nome nodo4
+2015-03-27 14:52:19 LOOP: ho trovato 4 hosts remoti
+2015-03-27 14:52:21 LOOP: ho trovato 4 hosts remoti
+2015-03-27 14:52:23 LOOP: ho trovato 4 hosts remoti
+2015-03-27 14:52:24 Click HOSTS REMOTI: 2 ovvero nodo3
+2015-03-27 14:52:27 Click HOSTS REMOTI: 1 ovvero nodo2
+2015-03-27 14:52:27 Errore determinazione file remoti a seguito odi click su lista host remoti
+2015-03-27 14:52:28 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 14:52:31 Click HOSTS REMOTI: 1 ovvero nodo2
+2015-03-27 14:52:31 Errore determinazione file remoti a seguito odi click su lista host remoti
+2015-03-27 14:52:32 Click HOSTS REMOTI: 2 ovvero nodo3
+2015-03-27 14:52:37 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 14:52:37 Click HOSTS REMOTI: 1 ovvero nodo2
+2015-03-27 14:52:37 Errore determinazione file remoti a seguito odi click su lista host remoti
+2015-03-27 14:52:40 LOOP: aggiorno files hostremoto nell'elenco numero:1
+2015-03-27 14:52:40 Errore RMI remoto! l'host potrebbe non essere più disponibile
+2015-03-27 14:53:10 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:53:10 divina_commedia.txt
+2015-03-27 14:53:10 pippo.txt
+2015-03-27 14:53:10 immagine.jpg
+2015-03-27 14:53:10 Avvio server RMI...
+2015-03-27 14:53:10 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 14:53:10 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 14:53:14 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:53:14 divina_commedia.txt
+2015-03-27 14:53:14 rfc6824_MPTCP.pdf
+2015-03-27 14:53:14 pippo.txt
+2015-03-27 14:53:14 Avvio server RMI...
+2015-03-27 14:53:14 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 14:53:14 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 14:53:16 LOOP: ho trovato 2 hosts remoti
+2015-03-27 14:53:19 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 14:53:19 Errore selezione file locale
+2015-03-27 14:53:20 LOOP: ho trovato 2 hosts remoti
+2015-03-27 14:53:30 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 14:53:30 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:53:32 Voglio fare qualcosa con immagine.jpg sulla lista jListLocalFiles
+2015-03-27 14:53:32 Di preciso voglio DOWNLOAD del file remoto immagine.jpg nel file locale database_nodo2/immagine.jpg
+2015-03-27 14:53:32 Contatto nodo1 per scaricare il file
+2015-03-27 14:53:32 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 14:53:32 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 14:53:32 Errore selezione file locale
+2015-03-27 14:53:32 FATTO!!!! immagine.jpg scaricato con successo
+2015-03-27 14:53:38 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 14:53:38 Errore selezione file locale
+2015-03-27 14:53:40 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:53:40 Errore click file remoti!
+2015-03-27 14:53:40 L'ultima volta era selezionato il 2
+2015-03-27 14:53:50 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:53:50 Errore click file remoti!
+2015-03-27 14:53:50 L'ultima volta era selezionato il 2
+2015-03-27 14:53:50 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 14:53:50 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf nel file remoto /rfc6824_MPTCP.pdf
+2015-03-27 14:53:50 Errore! remote è nullo
+2015-03-27 14:54:00 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:54:00 Errore click file remoti!
+2015-03-27 14:54:00 L'ultima volta era selezionato il 2
+2015-03-27 14:54:10 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:54:10 Errore click file remoti!
+2015-03-27 14:54:10 L'ultima volta era selezionato il 2
+2015-03-27 14:58:16 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:58:16 divina_commedia.txt
+2015-03-27 14:58:16 pippo.txt
+2015-03-27 14:58:16 immagine.jpg
+2015-03-27 14:58:16 Avvio server RMI...
+2015-03-27 14:58:16 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 14:58:16 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 14:58:20 Vediamo che files ho a disposizione da condividere
+2015-03-27 14:58:20 rfc6824_MPTCP.pdf
+2015-03-27 14:58:20 immagine.jpg
+2015-03-27 14:58:20 Avvio server RMI...
+2015-03-27 14:58:20 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 14:58:20 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 14:58:22 LOOP: ho trovato 2 hosts remoti
+2015-03-27 14:58:23 Aggiorno elenco file locali: 1 file trovati
+2015-03-27 14:58:23 Errore selezione file locale
+2015-03-27 14:58:26 LOOP: ho trovato 2 hosts remoti
+2015-03-27 14:58:32 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 14:58:36 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:58:36 Errore click file remoti!
+2015-03-27 14:58:36 L'ultima volta era selezionato il 1
+2015-03-27 14:58:36 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 14:58:36 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 14:58:36 Errore! remote è nullo per download
+2015-03-27 14:58:44 Voglio fare qualcosa con divina_commedia.txt sulla lista jListLocalFiles
+2015-03-27 14:58:44 Di preciso voglio DOWNLOAD del file remoto divina_commedia.txt nel file locale database_nodo2/divina_commedia.txt
+2015-03-27 14:58:44 Errore! remote è nullo per download
+2015-03-27 14:58:45 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:58:45 Errore click file remoti!
+2015-03-27 14:58:45 L'ultima volta era selezionato il 2
+2015-03-27 14:58:46 Voglio fare qualcosa con immagine.jpg sulla lista jListLocalFiles
+2015-03-27 14:58:46 Di preciso voglio DOWNLOAD del file remoto immagine.jpg nel file locale database_nodo2/immagine.jpg
+2015-03-27 14:58:46 Errore! remote è nullo per download
+2015-03-27 14:58:55 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:58:55 Errore click file remoti!
+2015-03-27 14:58:55 L'ultima volta era selezionato il 2
+2015-03-27 14:59:05 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:59:05 Errore click file remoti!
+2015-03-27 14:59:05 L'ultima volta era selezionato il 2
+2015-03-27 14:59:15 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:59:15 Errore click file remoti!
+2015-03-27 14:59:15 L'ultima volta era selezionato il 2
+2015-03-27 14:59:25 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:59:25 Errore click file remoti!
+2015-03-27 14:59:25 L'ultima volta era selezionato il 2
+2015-03-27 14:59:35 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:59:35 Errore click file remoti!
+2015-03-27 14:59:35 L'ultima volta era selezionato il 2
+2015-03-27 14:59:45 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:59:45 Errore click file remoti!
+2015-03-27 14:59:45 L'ultima volta era selezionato il 2
+2015-03-27 14:59:55 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 14:59:55 Errore click file remoti!
+2015-03-27 14:59:55 L'ultima volta era selezionato il 2
+2015-03-27 15:00:05 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:00:05 Errore click file remoti!
+2015-03-27 15:00:05 L'ultima volta era selezionato il 2
+2015-03-27 15:00:15 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:00:15 Errore click file remoti!
+2015-03-27 15:00:15 L'ultima volta era selezionato il 2
+2015-03-27 15:00:25 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:00:25 Errore click file remoti!
+2015-03-27 15:00:25 L'ultima volta era selezionato il 2
+2015-03-27 15:00:35 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:00:35 Errore click file remoti!
+2015-03-27 15:00:35 L'ultima volta era selezionato il 2
+2015-03-27 15:00:45 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:00:45 Errore click file remoti!
+2015-03-27 15:00:45 L'ultima volta era selezionato il 2
+2015-03-27 15:00:55 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:00:55 Errore click file remoti!
+2015-03-27 15:00:55 L'ultima volta era selezionato il 2
+2015-03-27 15:01:02 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:01:02 divina_commedia.txt
+2015-03-27 15:01:02 pippo.txt
+2015-03-27 15:01:02 immagine.jpg
+2015-03-27 15:01:02 Avvio server RMI...
+2015-03-27 15:01:02 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:01:02 Lato server, Eseguo bind() con nome nodo3
+2015-03-27 15:01:05 LOOP: ho trovato 3 hosts remoti
+2015-03-27 15:01:05 Warn: click vuoto nel pannello host remoti
+2015-03-27 15:01:05 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:01:05 Errore click file remoti!
+2015-03-27 15:01:05 host remoti, L'ultima volta era selezionato il 0
+2015-03-27 15:01:07 LOOP: ho trovato 3 hosts remoti
+2015-03-27 15:01:09 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:01:09 Click HOSTS REMOTI: 1 ovvero nodo2
+2015-03-27 15:01:10 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:01:10 Click HOSTS REMOTI: 1 ovvero nodo2
+2015-03-27 15:01:11 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:01:12 LOOP: ho trovato 3 hosts remoti
+2015-03-27 15:01:12 Click HOSTS REMOTI: 1 ovvero nodo2
+2015-03-27 15:01:14 Voglio fare qualcosa con rfc6824_MPTCP.pdf sulla lista jListLocalFiles
+2015-03-27 15:01:14 Di preciso voglio DOWNLOAD del file remoto rfc6824_MPTCP.pdf nel file locale database_nodo3/rfc6824_MPTCP.pdf
+2015-03-27 15:01:14 Errore! remote è nullo per download
+2015-03-27 15:01:15 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:01:17 LOOP: aggiorno files hostremoto nell'elenco numero:1
+2015-03-27 15:01:17 Errore click file remoti!
+2015-03-27 15:01:17 L'ultima volta era selezionato il 0
+2015-03-27 15:01:24 Voglio fare qualcosa con rfc6824_MPTCP.pdf sulla lista jListLocalFiles
+2015-03-27 15:01:24 Di preciso voglio DOWNLOAD del file remoto rfc6824_MPTCP.pdf nel file locale database_nodo3/rfc6824_MPTCP.pdf
+2015-03-27 15:01:24 Errore! remote è nullo per download
+2015-03-27 15:01:25 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:01:25 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:01:25 Errore click file remoti!
+2015-03-27 15:01:27 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:01:35 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:01:39 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:01:39 divina_commedia.txt
+2015-03-27 15:01:39 pippo.txt
+2015-03-27 15:01:39 immagine.jpg
+2015-03-27 15:01:39 Avvio server RMI...
+2015-03-27 15:01:39 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:01:39 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:01:42 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:01:42 rfc6824_MPTCP.pdf
+2015-03-27 15:01:42 Avvio server RMI...
+2015-03-27 15:01:42 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:01:42 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:01:45 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:01:48 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:01:49 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:01:50 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 15:01:50 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 15:01:50 Errore! remote è nullo per download
+2015-03-27 15:01:58 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:01:58 Errore click file remoti!
+2015-03-27 15:01:58 L'ultima volta era selezionato il 1
+2015-03-27 15:02:08 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:02:08 Errore click file remoti!
+2015-03-27 15:02:08 L'ultima volta era selezionato il 1
+2015-03-27 15:02:18 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:02:18 Errore click file remoti!
+2015-03-27 15:02:18 L'ultima volta era selezionato il 1
+2015-03-27 15:02:28 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:02:28 Errore click file remoti!
+2015-03-27 15:02:28 L'ultima volta era selezionato il 1
+2015-03-27 15:02:38 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:02:38 Errore click file remoti!
+2015-03-27 15:02:38 L'ultima volta era selezionato il 1
+2015-03-27 15:02:48 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:02:48 Errore click file remoti!
+2015-03-27 15:02:48 L'ultima volta era selezionato il 1
+2015-03-27 15:02:53 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:02:53 divina_commedia.txt
+2015-03-27 15:02:53 pippo.txt
+2015-03-27 15:02:53 immagine.jpg
+2015-03-27 15:02:53 Avvio server RMI...
+2015-03-27 15:02:53 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:02:53 Lato server, Eseguo bind() con nome nodo3
+2015-03-27 15:02:55 LOOP: ho trovato 3 hosts remoti
+2015-03-27 15:03:10 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:03:10 divina_commedia.txt
+2015-03-27 15:03:10 pippo.txt
+2015-03-27 15:03:10 immagine.jpg
+2015-03-27 15:03:10 Avvio server RMI...
+2015-03-27 15:03:10 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:03:10 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:03:15 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:03:15 rfc6824_MPTCP.pdf
+2015-03-27 15:03:15 Avvio server RMI...
+2015-03-27 15:03:15 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:03:15 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:03:16 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:03:21 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:03:21 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:03:22 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 15:03:22 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 15:03:22 Contatto nodo1 per scaricare il file
+2015-03-27 15:03:22 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 15:03:23 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:03:23 FATTO!!!! pippo.txt scaricato con successo
+2015-03-27 15:03:23 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:03:27 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 15:03:27 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf nel file remoto rfc6824_MPTCP.pdf
+2015-03-27 15:03:27 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:03:27 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:03:27 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:03:27 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:03:30 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:03:30 Errore click file remoti!
+2015-03-27 15:03:30 L'ultima volta era selezionato il 1
+2015-03-27 15:03:40 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:03:40 Errore click file remoti!
+2015-03-27 15:03:40 L'ultima volta era selezionato il 1
+2015-03-27 15:03:50 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:03:50 Errore click file remoti!
+2015-03-27 15:03:50 L'ultima volta era selezionato il 1
+2015-03-27 15:04:00 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:04:00 Errore click file remoti!
+2015-03-27 15:04:00 L'ultima volta era selezionato il 1
+2015-03-27 15:04:10 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:04:10 Errore click file remoti!
+2015-03-27 15:04:10 L'ultima volta era selezionato il 1
+2015-03-27 15:04:20 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:04:20 Errore click file remoti!
+2015-03-27 15:04:20 L'ultima volta era selezionato il 1
+2015-03-27 15:04:30 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:04:30 Errore click file remoti!
+2015-03-27 15:04:30 L'ultima volta era selezionato il 1
+2015-03-27 15:04:40 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:04:40 Errore click file remoti!
+2015-03-27 15:04:40 L'ultima volta era selezionato il 1
+2015-03-27 15:04:50 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:04:50 Errore click file remoti!
+2015-03-27 15:04:50 L'ultima volta era selezionato il 1
+2015-03-27 15:05:00 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:05:00 Errore click file remoti!
+2015-03-27 15:05:00 L'ultima volta era selezionato il 1
+2015-03-27 15:05:10 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:05:10 Errore click file remoti!
+2015-03-27 15:05:10 L'ultima volta era selezionato il 1
+2015-03-27 15:05:20 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:05:20 Errore click file remoti!
+2015-03-27 15:05:20 L'ultima volta era selezionato il 1
+2015-03-27 15:05:30 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:05:30 Errore click file remoti!
+2015-03-27 15:05:30 L'ultima volta era selezionato il 1
+2015-03-27 15:05:40 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:05:40 Errore click file remoti!
+2015-03-27 15:05:40 L'ultima volta era selezionato il 1
+2015-03-27 15:05:50 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:05:50 Errore click file remoti!
+2015-03-27 15:05:50 L'ultima volta era selezionato il 1
+2015-03-27 15:05:54 Aggiorno elenco file locali: 1 file trovati
+2015-03-27 15:05:54 Errore selezione file locale
+2015-03-27 15:06:00 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:06:00 Errore click file remoti!
+2015-03-27 15:06:00 L'ultima volta era selezionato il 1
+2015-03-27 15:06:10 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:06:10 Errore click file remoti!
+2015-03-27 15:06:10 L'ultima volta era selezionato il 1
+2015-03-27 15:06:20 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:06:20 Errore click file remoti!
+2015-03-27 15:06:20 L'ultima volta era selezionato il 1
+2015-03-27 15:06:30 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:06:30 Errore click file remoti!
+2015-03-27 15:06:30 L'ultima volta era selezionato il 1
+2015-03-27 15:06:40 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:06:40 Errore click file remoti!
+2015-03-27 15:06:40 L'ultima volta era selezionato il 1
+2015-03-27 15:06:50 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:06:50 Errore click file remoti!
+2015-03-27 15:06:50 L'ultima volta era selezionato il 1
+2015-03-27 15:06:58 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:06:58 divina_commedia.txt
+2015-03-27 15:06:58 pippo.txt
+2015-03-27 15:06:58 immagine.jpg
+2015-03-27 15:06:58 Avvio server RMI...
+2015-03-27 15:06:58 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:06:58 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:07:00 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:07:00 rfc6824_MPTCP.pdf
+2015-03-27 15:07:00 Avvio server RMI...
+2015-03-27 15:07:00 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:07:00 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:07:04 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:07:06 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:07:07 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:07:09 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 15:07:09 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 15:07:09 Contatto nodo1 per scaricare il file
+2015-03-27 15:07:09 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 15:07:09 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:07:09 FATTO!!!! pippo.txt scaricato con successo
+2015-03-27 15:07:09 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:07:14 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 15:07:14 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf nel file remoto rfc6824_MPTCP.pdf
+2015-03-27 15:07:14 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:07:14 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:07:14 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:07:14 Contatto nodo1 per UPLODARGLI il file
+2015-03-27 15:07:16 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:07:16 Errore click file remoti!
+2015-03-27 15:07:16 L'ultima volta era selezionato il 1
+2015-03-27 15:09:54 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:09:54 divina_commedia.txt
+2015-03-27 15:09:54 pippo.txt
+2015-03-27 15:09:54 immagine.jpg
+2015-03-27 15:09:54 Avvio server RMI...
+2015-03-27 15:09:54 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:09:54 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:09:57 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:09:57 rfc6824_MPTCP.pdf
+2015-03-27 15:09:57 pippo.txt
+2015-03-27 15:09:57 Avvio server RMI...
+2015-03-27 15:09:57 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:09:57 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:10:00 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:10:03 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:10:08 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:10:10 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 15:10:10 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 15:10:10 Contatto nodo1 per scaricare il file
+2015-03-27 15:10:10 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 15:10:10 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:10:10 FATTO!!!! pippo.txt scaricato con successo
+2015-03-27 15:10:10 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:10:12 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 15:10:12 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 15:10:12 Contatto nodo1 per UPLODARGLI il file rfc6824_MPTCP.pdf
+2015-03-27 15:10:12 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:10:12 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:10:12 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:10:13 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:10:13 Errore click file remoti!
+2015-03-27 15:10:39 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 15:13:44 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:13:44 divina_commedia.txt
+2015-03-27 15:13:44 pippo.txt
+2015-03-27 15:13:44 immagine.jpg
+2015-03-27 15:13:44 Avvio server RMI...
+2015-03-27 15:13:44 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:13:44 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:13:47 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:13:47 rfc6824_MPTCP.pdf
+2015-03-27 15:13:47 pippo.txt
+2015-03-27 15:13:47 Avvio server RMI...
+2015-03-27 15:13:47 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:13:47 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:13:49 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:13:53 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:13:55 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:13:57 Aggiorno elenco file locali: 1 file trovati
+2015-03-27 15:13:57 Errore selezione file locale
+2015-03-27 15:14:03 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:14:13 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:14:23 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:14:33 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:14:43 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:14:53 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:15:03 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:15:13 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:15:23 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:15:31 Voglio fare qualcosa con pippo.txt sulla lista jListLocalFiles
+2015-03-27 15:15:31 Di preciso voglio DOWNLOAD del file remoto pippo.txt nel file locale database_nodo2/pippo.txt
+2015-03-27 15:15:31 Contatto nodo1 per scaricare il file
+2015-03-27 15:15:31 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 15:15:31 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:15:31 FATTO!!!! pippo.txt scaricato con successo
+2015-03-27 15:15:31 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:15:33 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:15:33 Errore click file remoti!
+2015-03-27 15:15:33 L'ultima volta era selezionato il 1
+2015-03-27 15:15:33 Aggiorno elenco file locali: 1 file trovati
+2015-03-27 15:15:33 Errore selezione file locale
+2015-03-27 15:15:41 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 15:15:41 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 15:15:41 Contatto nodo1 per UPLODARGLI il file rfc6824_MPTCP.pdf
+2015-03-27 15:15:41 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:15:41 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:15:41 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:15:43 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:15:43 Errore click file remoti!
+2015-03-27 15:21:42 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:21:42 divina_commedia.txt
+2015-03-27 15:21:42 rfc6824_MPTCP.pdf
+2015-03-27 15:21:42 pippo.txt
+2015-03-27 15:21:42 immagine.jpg
+2015-03-27 15:21:42 Avvio server RMI...
+2015-03-27 15:21:42 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:21:42 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:21:45 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:21:45 rfc6824_MPTCP.pdf
+2015-03-27 15:21:45 Avvio server RMI...
+2015-03-27 15:21:45 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:21:45 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:21:48 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:21:50 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:21:51 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:21:57 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 15:21:57 Errore selezione file locale
+2015-03-27 15:22:00 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:22:10 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:22:11 Click HOSTS REMOTI: 0 ovvero nodo2
+2015-03-27 15:22:15 Voglio fare qualcosa con rfc6824_MPTCP.pdf sulla lista jListLocalFiles
+2015-03-27 15:22:15 Di preciso voglio DOWNLOAD del file remoto rfc6824_MPTCP.pdf nel file locale database_nodo1/rfc6824_MPTCP.pdf
+2015-03-27 15:22:15 Contatto nodo2 per scaricare il file
+2015-03-27 15:22:15 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 15:22:15 FATTO!!!! rfc6824_MPTCP.pdf scaricato con successo
+2015-03-27 15:22:17 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:22:17 Errore click file remoti!
+2015-03-27 15:22:17 L'ultima volta era selezionato il 0
+2015-03-27 15:22:20 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:22:27 Voglio fare qualcosa con divina_commedia.txt sulla lista jListLocalFiles
+2015-03-27 15:22:27 Di preciso voglio DOWNLOAD del file remoto divina_commedia.txt nel file locale database_nodo2/divina_commedia.txt
+2015-03-27 15:22:27 Contatto nodo1 per scaricare il file
+2015-03-27 15:22:27 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 15:22:27 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:22:27 FATTO!!!! divina_commedia.txt scaricato con successo
+2015-03-27 15:22:27 Errore selezione file locale
+2015-03-27 15:22:27 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:22:27 Errore click file remoti!
+2015-03-27 15:22:30 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:22:30 Errore click file remoti!
+2015-03-27 15:22:30 L'ultima volta era selezionato il 0
+2015-03-27 15:22:58 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:22:58 divina_commedia.txt
+2015-03-27 15:22:58 pippo.txt
+2015-03-27 15:22:58 immagine.jpg
+2015-03-27 15:22:58 Avvio server RMI...
+2015-03-27 15:22:58 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:22:58 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:23:03 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:23:03 rfc6824_MPTCP.pdf
+2015-03-27 15:23:03 Avvio server RMI...
+2015-03-27 15:23:03 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:23:03 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:23:04 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:23:08 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:23:10 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:23:12 Voglio fare qualcosa con immagine.jpg sulla lista jListLocalFiles
+2015-03-27 15:23:12 Di preciso voglio DOWNLOAD del file remoto immagine.jpg nel file locale database_nodo2/immagine.jpg
+2015-03-27 15:23:12 Contatto nodo1 per scaricare il file
+2015-03-27 15:23:12 Confermo: l'host remoto ha il file richiesto!
+2015-03-27 15:23:12 FATTO!!!! immagine.jpg scaricato con successo
+2015-03-27 15:23:12 Aggiorno elenco file locali: 2 file trovati
+2015-03-27 15:23:17 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 15:23:17 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 15:23:17 Contatto nodo1 per UPLODARGLI il file rfc6824_MPTCP.pdf
+2015-03-27 15:23:17 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:23:17 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:23:17 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:23:18 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:23:18 Errore click file remoti!
+2015-03-27 15:25:46 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:25:46 divina_commedia.txt
+2015-03-27 15:25:46 pippo.txt
+2015-03-27 15:25:46 immagine.jpg
+2015-03-27 15:25:46 Avvio server RMI...
+2015-03-27 15:25:46 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:25:46 Lato server, Eseguo bind() con nome nodo3
+2015-03-27 15:25:53 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:25:53 divina_commedia.txt
+2015-03-27 15:25:53 rfc6824_MPTCP.pdf
+2015-03-27 15:25:53 pippo.txt
+2015-03-27 15:25:53 immagine.jpg
+2015-03-27 15:25:53 Avvio server RMI...
+2015-03-27 15:25:53 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:25:53 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:25:55 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:25:55 rfc6824_MPTCP.pdf
+2015-03-27 15:25:55 immagine.jpg
+2015-03-27 15:25:55 Avvio server RMI...
+2015-03-27 15:25:55 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:25:55 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:25:59 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:26:01 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:26:03 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:26:11 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:26:16 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListLocalFiles
+2015-03-27 15:26:18 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 15:26:18 Errore selezione file locale
+2015-03-27 15:26:21 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:26:31 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:26:31 Errore click file remoti!
+2015-03-27 15:26:31 L'ultima volta era selezionato il 2
+2015-03-27 15:26:41 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:26:41 Errore click file remoti!
+2015-03-27 15:26:41 L'ultima volta era selezionato il 2
+2015-03-27 15:26:46 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 15:26:46 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 15:26:46 Contatto nodo1 per UPLODARGLI il file rfc6824_MPTCP.pdf
+2015-03-27 15:26:46 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:26:46 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:26:46 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:26:51 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:26:51 Errore click file remoti!
+2015-03-27 15:29:37 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:29:37 divina_commedia.txt
+2015-03-27 15:29:37 rfc6824_MPTCP.pdf
+2015-03-27 15:29:37 pippo.txt
+2015-03-27 15:29:37 immagine.jpg
+2015-03-27 15:29:37 Avvio server RMI...
+2015-03-27 15:29:37 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:29:37 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:29:39 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:29:39 rfc6824_MPTCP.pdf
+2015-03-27 15:29:39 immagine.jpg
+2015-03-27 15:29:39 Avvio server RMI...
+2015-03-27 15:29:39 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:29:39 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:29:43 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:29:45 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:29:46 Click HOSTS REMOTI: 0 ovvero nodo1
+2015-03-27 15:29:50 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 15:29:50 Errore selezione file locale
+2015-03-27 15:29:55 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:29:58 Voglio fare qualcosa con database_nodo2/rfc6824_MPTCP.pdf sulla lista jListRemoteFiles
+2015-03-27 15:29:58 Di preciso voglio UPLOAD del file locale database_nodo2/rfc6824_MPTCP.pdf
+2015-03-27 15:29:58 Contatto nodo1 per UPLODARGLI il file rfc6824_MPTCP.pdf
+2015-03-27 15:29:58 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:29:58 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:29:58 Aggiorno elenco file locali: 4 file trovati
+2015-03-27 15:30:05 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:30:15 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:30:25 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:30:35 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:32:26 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:32:26 divina_commedia.txt
+2015-03-27 15:32:26 rfc6824_MPTCP.pdf
+2015-03-27 15:32:26 pippo.txt
+2015-03-27 15:32:26 immagine.jpg
+2015-03-27 15:32:26 Avvio server RMI...
+2015-03-27 15:32:26 Ecco il registry:RegistryImpl[UnicastServerRef [liveRef: [endpoint:[127.0.1.1:1099](local),objID:[0:0:0, 0]]]]
+2015-03-27 15:32:26 Lato server, Eseguo bind() con nome nodo1
+2015-03-27 15:32:28 Vediamo che files ho a disposizione da condividere
+2015-03-27 15:32:28 rfc6824_MPTCP.pdf
+2015-03-27 15:32:28 immagine.jpg
+2015-03-27 15:32:28 Avvio server RMI...
+2015-03-27 15:32:28 Ecco il registry:RegistryImpl_Stub[UnicastRef [liveRef: [endpoint:[127.0.1.1:1099](remote),objID:[0:0:0, 0]]]]
+2015-03-27 15:32:28 Lato server, Eseguo bind() con nome nodo2
+2015-03-27 15:32:32 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:32:34 LOOP: ho trovato 2 hosts remoti
+2015-03-27 15:33:19 Voglio fare qualcosa con database_nodo1/pippo.txt sulla lista jListLocalFiles
+2015-03-27 15:33:22 Click HOSTS REMOTI: 0 ovvero nodo2
+2015-03-27 15:33:32 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:33:42 LOOP: aggiorno files hostremoto nell'elenco numero:0
+2015-03-27 15:33:45 Voglio fare qualcosa con database_nodo1/pippo.txt sulla lista jListRemoteFiles
+2015-03-27 15:33:45 Di preciso voglio UPLOAD del file locale database_nodo1/pippo.txt
+2015-03-27 15:33:45 Contatto nodo2 per UPLODARGLI il file pippo.txt
+2015-03-27 15:33:45 Aggiorno elenco file locali: 3 file trovati
+2015-03-27 15:33:45 Impossibile contattare host remoto per caricare il file database_nodo1/pippo.txt
+2015-03-27 15:33:52 LOOP: aggiorno files hostremoto nell'elenco numero:0
