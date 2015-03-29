@@ -10,9 +10,25 @@ import javax.swing.DefaultListModel;
 import javax.swing.JComponent;
 import javax.swing.JList;
 
-import com.theangi.misc.Constants;
 import com.theangi.misc.Utils;
 import com.theangi.myinterfaces.MyInterface;
+
+/*
+ * 
+ * Software architect
+ * 
+ * File new project -> nome a cazzo
+ * Core Modeling seleziona tutti uml
+ * package --> code engineering --> 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * */
 
 public class ListTransferHandler extends StringTransferHandler {
     /**
@@ -76,7 +92,7 @@ public class ListTransferHandler extends StringTransferHandler {
 					if(remote.isFilePresent(str)){
 						Utils.stampaLogga("Confermo: l'host remoto ha il file richiesto!");
 						
-						download(remote, new File(str), Utils.getFileInSharedFolder(new File(str), nomeNodo));
+						Utils.download(remote, new File(str), Utils.getFileInSharedFolder(new File(str), nomeNodo), nomeNodo);
 			        	Utils.stampaLogga("FATTO!!!! " + str + " scaricato con successo");
 						
 					} else {
@@ -173,67 +189,4 @@ public class ListTransferHandler extends StringTransferHandler {
         addCount = 0;
         addIndex = -1;
     }
-    
-    /**
-     * Scarica dal server remoto il file src (remoto) nel file dest locale (lo crea)
-     * @param server il server remoto da cui scaricare il file
-     * @param src il percorso del file remoto
-     * @param dest il percorso del file locale
-     * @throws IOException
-     */
-    private void download(MyInterface server, File src, File dest){
-        
-    	if(server==null){
-    		Utils.stampaLogga("Impossibile contattare host remoto");
-    		return;
-    	}
-    	
-    	long inizio = System.currentTimeMillis();
-    	
-    	try {
-    		
-    		/*Controllo di avere dove salvare il file che voglio salvare!*/
-    		File f = new File(Constants.PREFIX_DATABASE + this.nomeNodo);
-    		if(!f.exists()){
-    			System.out.println("Ho dovuto creare io la cartella database!");
-    			f.mkdirs();
-    		}
-    		
-			Utils.copy (server.getInputStream(src), new FileOutputStream(dest));
-			
-		} catch (RemoteException e) {
-			System.out.println("Eccezione remota. Impossibile scaricare il file " + src.getPath());
-			e.printStackTrace();
-			return;
-		} catch (FileNotFoundException e) {
-			System.out.println("File non trovato!!!");
-			e.printStackTrace();
-			return;
-		} catch (IOException e) {
-			System.out.println("Errore IO");
-			e.printStackTrace();
-			return;
-		}
-    	
-		long fine = System.currentTimeMillis();
-		long quanto = (fine-inizio);
-		
-		try {
-			System.out.print("Download eseguito in " + quanto + "ms ");
-			System.out.print("Ovvero " + quanto/1000 + " secondi");
-			System.out.println("");
-			
-		} catch (Exception e) {
-			//Localmente impiega così poco tempo che devo gestire eccezioni
-		}
-		
-		try {
-			System.out.print("Quindi in media " + src.length()/(quanto/1000) + "B/s");
-			System.out.print("Ovvero " + (src.length()/1024) / (quanto/1000) + "KB/s");
-			System.out.println("");
-		} catch (Exception e){
-			//Localmente impiega così poco tempo che devoi gestire eccezioni
-		}
-    }
-    
 }

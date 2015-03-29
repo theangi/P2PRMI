@@ -152,6 +152,13 @@ public class Utils {
     	
     }
     
+    /**
+     * Scarica dal server remoto il file src (remoto) nel file dest locale (lo crea)
+     * @param server il server remoto da cui scaricare il file
+     * @param src il percorso del file remoto
+     * @param dest il percorso del file locale
+     * @throws IOException
+     */
     public static void download(MyInterface server, File src, File dest, String nomeNodo){
         
     	if(server==null){

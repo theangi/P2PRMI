@@ -18,6 +18,7 @@ public class NetworkRunnable implements Runnable{
 		this.i = i;
 		this.myIP = myIP;
 		
+		/*Faccio partire un thread!*/
 		t = new Thread(this);
 		t.start();
 	}
@@ -25,24 +26,14 @@ public class NetworkRunnable implements Runnable{
 	@Override
 	public void run() {
 		
+		/*Non esiste nodo0 e non esiste nodo255*/
 		int numNodo = i+1;
 		
-		if(numNodo==0){
-			System.out.println("Errore! 0");
-		} else if(numNodo==1){
-			System.out.println("Primo");
-			
-		} else if(numNodo==254){
-			System.out.println("ultimo!");
-		} else if(numNodo==255){
-			System.out.println("Errore 255!");
+		if(numNodo==0 || numNodo==255){
+			Utils.stampaLogga("Errore! non devo cercare nodo" + numNodo);
+			return;
 		}
-		
-		//String host  = "192.168.1." + numNodo;
-		
-		int timeout=30000;
-		
-		//System.out.println("Lavoro sull'address " + numNodo);
+
 		
 		String who = Constants.PREFIX_PEER + numNodo;
 		
@@ -61,7 +52,7 @@ public class NetworkRunnable implements Runnable{
 			InetAddress address = InetAddress.getByAddress(ip);
 			
 			/*Controllo se è raggiungibile*/
-			if (address.isReachable(timeout)){
+			if (address.isReachable(Constants.TIMEOUT_SEARCH_HOSTS)){
 				System.out.println(who + ", ovvero " + address + ", è raggiungibile!");
 				addressFound = address.toString();
 				nomePeer = who;
@@ -72,10 +63,17 @@ public class NetworkRunnable implements Runnable{
 		}
 	}
 	
+	/**
+	 * @return l'indirizzo IP del nodo
+	 */
 	public String getAddress(){		
 		return addressFound;
 	}
 
+	/**
+	 * @return il nome del nodo. Per scelta anchitetturale, questo è sempre nodox dove x è l'ultimo byte
+	 * dell'indirizzo IP
+	 */
 	public String getNomePeer() {
 		return nomePeer;
 	}

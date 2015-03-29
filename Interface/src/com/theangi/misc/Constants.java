@@ -8,8 +8,13 @@ public class Constants {
 	/** La stringa "database" */
 	public static final String PREFIX_DATABASE = "database_";
 	
+	/** La stringa "nodo" */
 	public static final String PREFIX_PEER = "nodo";
 	
-	final public static int BUF_SIZE = 1024 * 64;
+	/** La dimensione di invio di ogni chunk per i file*/
+	public static final int BUF_SIZE = 1024 * 64;
+	
+	/** Timeout oltre il quale un host viene considerato irraggiungibile*/
+	public static final int TIMEOUT_SEARCH_HOSTS = 30000;
 	
 }

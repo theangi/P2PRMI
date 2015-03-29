@@ -44,7 +44,8 @@ public class NetworkUtils {
 	}
 	
 	/**
-	 * Cerca nelle interfacce di rete il vero IP di questo sistema
+	 * Cerca nelle interfacce di rete il vero IP di questo sistema.
+	 * Suppongo ragionevolmente di essere in una rete 192.168.x.x
 	 * @return
 	 */
 	public static String getLocalIP(){
@@ -62,17 +63,41 @@ public class NetworkUtils {
 	}
 	
 	/**
+	 * Torna l'ip del nodo remoto
+	 * @param nodoRemoto
+	 * @return
+	 */
+	public static String getRemoteIP(String nodoRemoto){
+		
+		/*nodoRemoto è del tipo nodoX. Prendo quindi solo il numero:*/
+		String term = nodoRemoto.substring(nodoRemoto.lastIndexOf("o") + 1, nodoRemoto.length());
+		
+		if(term=="0" || term == "255"){
+			Utils.stampaLogga("Errore! Impossibile determinare IP dell'host non consentito numero " + term);
+			return null;
+		}
+		
+		String ip = NetworkUtils.getLocalIP();
+		
+		/*Tolgo la parte più a destra dell'indirizzo*/
+		ip = ip.substring(ip.lastIndexOf(".") + 1);
+		
+		return ip + term;
+		
+	}
+	
+	/**
 	 * Permette di trovare tutti i peer presenti nella rete.
 	 * In particolare, ritorna il nome dei servizi registrati
 	 * sui relativi peer, in modo che Naming.lookup() sia subito
 	 * possibile. Specificare first available garantisce il ritorno di un ArrayList
 	 * con UN SOLO elemento contenente il primo nome disponibile libero.
 	 * @param firstAvailable 
-	 * @return l'elenco dei peer nella rete
+	 * @return l'elenco dei peer nella rete. se <code>firstAvailable</code> è true, 
+	 * è garantito l'array contenga solo un elemento
 	 */
     public static ArrayList<String> findPeers(boolean firstAvailable){
     	
-    	//System.out.println("=== findPeers ===");
     	ArrayList<String> elenco = new ArrayList<String>();
     	
     	for(int i=1;i<255;i++){
@@ -81,9 +106,8 @@ public class NetworkUtils {
 			
 			try {
 				
-				/*Per farlo funzionare fai ipconfig sull'altro pc e guarda*/
-				//Naming.lookup("//miodesktop:" + Constants.RMI_PORT + "/" + who);	//questo funziona nella realtà
-				Naming.lookup(who);													//questo funziona sul localhost
+				/*Questo funziona solo su localhost, poichè non ho specificato alcun uri*/
+				Naming.lookup(who);
 				
 				/*Se non lancia eccezione naming.lookup, significa esiste!*/
 				elenco.add(who);
@@ -105,13 +129,12 @@ public class NetworkUtils {
 				System.out.println("Eccezione generica");
 			}
     	}
-    	//System.out.println("=== /findPeers ===");
-    	//Utils.stampaLogga("In fase di lookup ho trovato " + elenco.size() + " elementi");
     	
     	return elenco;
     }
     
     /**
+     * Il metodo è inusabile su linux: o meglio è ambiguo e non fornisce garanzie sull'IP 
      * checkHosts("192.168.0");
      * @param subnet
      * @return
@@ -139,6 +162,10 @@ public class NetworkUtils {
     	return tmp;
     }
     
+    /**
+     * Determina gli host presenti nella sottorete.
+     * @return
+     */
     public static ArrayList<String> findREALPeers(){
     	
     	ArrayList<String> tmp = new ArrayList<String>();
@@ -170,7 +197,6 @@ public class NetworkUtils {
 		}
     	
     	return tmp;
-    	
     	
     }
     

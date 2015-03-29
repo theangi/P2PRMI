@@ -173,19 +173,19 @@ public class MyClient{
 	        			
 	        			Utils.stampaLogga("LOOP: aggiorno files hostremoto nell'elenco numero:" + currentRemoteHostClicked);
 	        			
-	        			String chi;
-	        			if(debug)
-	        				/*Indico semplicemente "nodox"*/
-	        				chi = listaHostsRemoti[currentRemoteHostClicked];
-	        			else
-	        				/* Devo indicare /192.168.1.x:1099/nodox */
-	        				chi = NetworkUtils.getLocalIP() + ":" + Constants.RMI_PORT + "/" + listaHostsRemoti[currentRemoteHostClicked];
+	        			String chi = listaHostsRemoti[currentRemoteHostClicked];
+	        			
+	        			/*Nel mondo locale, basta dire "nodox" e va bene*/
+	        			if(!debug){
+	        				/* Ma nel mondo "vero", devo ndicare /192.168.1.x:1099/nodox */
+	        				chi = NetworkUtils.getRemoteIP(chi) + ":" + Constants.RMI_PORT + "/" + chi;
+	        			}
 	            		
 	        			Utils.stampa("Contatto " + chi + " per vedere se ha dei file nuovi!");
 	        			
 	        			/*Mi collego all'host remoto attualmente mostrato*/
-	            		remote = (MyInterface) Naming.lookup(chi);
-	            		
+	        			remote = (MyInterface) Naming.lookup(chi);
+	        			
 	            		/*Prendo il suo elenco di file*/
 	            		ArrayList<String> tmp2 = remote.getElencoFiles();
 	            		
@@ -200,9 +200,8 @@ public class MyClient{
 							/*Lascio selezionato quello correntes*/
 							root.refreshFileRemoti(listaFileRemoti, currentRemoteFileClicked);
 						}
-	            		
 						
-					} catch (MalformedURLException e) {
+	        		} catch (MalformedURLException e) {
 						e.printStackTrace();
 						Utils.stampaLogga("Errore determinazione indirizzo host remoto");
 					} catch (RemoteException e) {
