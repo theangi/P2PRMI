@@ -123,7 +123,7 @@ public class MyClient{
             	/* ========================== */
             	/* ========================== */
             	/* ========================== */
-            	boolean debug = true;
+            	boolean debug = false;
             	/* ========================== */
             	/* ========================== */
             	/* ========================== */
@@ -181,7 +181,7 @@ public class MyClient{
 	        				chi = NetworkUtils.getRemoteIP(chi) + ":" + Constants.RMI_PORT + "/" + chi;
 	        			}
 	            		
-	        			Utils.stampa("Contatto " + chi + " per vedere se ha dei file nuovi!");
+	        			Utils.stampaLogga("Contatto " + chi + " per vedere se ha dei file nuovi!");
 	        			
 	        			/*Mi collego all'host remoto attualmente mostrato*/
 	        			remote = (MyInterface) Naming.lookup(chi);
@@ -215,7 +215,7 @@ public class MyClient{
 					}
             	}
             }
-         }, 5*1000, 10000); //dopo 5 secondi, ogni 30 secondi
+         }, 5*1000, 25000); //dopo 5 secondi, ogni 30 secondi
         
         
         EventQueue.invokeLater(new Runnable() {

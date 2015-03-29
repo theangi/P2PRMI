@@ -113,7 +113,7 @@ public class NetworkUtils {
 				elenco.add(who);
 				
 			} catch (MalformedURLException e) {
-				System.out.println("Malformed");
+				Utils.stampaLogga("Malformed URL in findPeers");
 			} catch (RemoteException | NotBoundException e2) {
 				//e.printStackTrace();
 				
@@ -126,7 +126,7 @@ public class NetworkUtils {
 				}
 				
 			} catch (Exception e){
-				System.out.println("Eccezione generica");
+				Utils.stampaLogga("Eccezione generica in findPeers");
 			}
     	}
     	
@@ -176,24 +176,8 @@ public class NetworkUtils {
     	for (Map.Entry<String, String> entry : lista.entrySet()) {
     		/*Gli indirizzi dovrebero già avere la "/" davanti ai numeri!*/
     		
-			try {
-				
-				String url = entry.getKey() + ":" + Constants.RMI_PORT + "/" + entry.getValue();
-				System.out.println("RMI provo a connettermi a " + url);
-				
-				Naming.lookup(url);
-				
-				System.out.println("MIRACOLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
-				tmp.add(entry.getValue());
-				
-			} catch (MalformedURLException e) {
-				e.printStackTrace();
-			} catch (RemoteException e) {
-				//e.printStackTrace();
-				System.out.println("L'host è raggiungibile ma non è RMI!");
-			} catch (NotBoundException e) {
-				e.printStackTrace();
-			}
+			System.out.println("MIRACOLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO");
+			tmp.add(entry.getValue());
 		}
     	
     	return tmp;
@@ -214,8 +198,6 @@ public class NetworkUtils {
     	for(int i=0;i<254;i++){
     		threads.add(new NetworkRunnable(i, NetworkUtils.getLocalIP()));
     	}
-    	
-    	System.out.println("1__________Fatto e partiti i thread");
     	
     	/*Aspetto tutti abbiano finito*/
     	for(int i=0;i<254;i++){

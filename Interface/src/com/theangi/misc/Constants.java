@@ -15,6 +15,10 @@ public class Constants {
 	public static final int BUF_SIZE = 1024 * 64;
 	
 	/** Timeout oltre il quale un host viene considerato irraggiungibile*/
-	public static final int TIMEOUT_SEARCH_HOSTS = 30000;
+	//public static final int TIMEOUT_SEARCH_HOSTS = 10000;
+	//public static final int TIMEOUT_SEARCH_HOSTS = 15000;
+	public static final int TIMEOUT_SEARCH_HOSTS = 20000;
+	//public static final int TIMEOUT_SEARCH_HOSTS = 25000;
+	//public static final int TIMEOUT_SEARCH_HOSTS = 30000;
 	
 }

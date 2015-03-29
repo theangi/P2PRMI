@@ -1,6 +1,14 @@
 package com.theangi.misc;
 
+import java.io.IOException;
 import java.net.InetAddress;
+import java.net.MalformedURLException;
+import java.net.UnknownHostException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
+
+import com.theangi.myinterfaces.MyInterface;
 
 public class NetworkRunnable implements Runnable{
 
@@ -37,10 +45,11 @@ public class NetworkRunnable implements Runnable{
 		
 		String who = Constants.PREFIX_PEER + numNodo;
 		
-		try {
 			
-			/*Prendo il mio indirizzo locale da stringa a classe InetAddress*/
-			InetAddress localhost = InetAddress.getByName(myIP);
+		/*Prendo il mio indirizzo locale da stringa a classe InetAddress*/
+		InetAddress localhost;
+		try {
+			localhost = InetAddress.getByName(myIP);
 			
 			/*Costruisco l'ip*/
 			byte[] ip = localhost.getAddress();
@@ -51,16 +60,51 @@ public class NetworkRunnable implements Runnable{
 			/*Questo è l'indirizzo finale*/
 			InetAddress address = InetAddress.getByAddress(ip);
 			
-			/*Controllo se è raggiungibile*/
-			if (address.isReachable(Constants.TIMEOUT_SEARCH_HOSTS)){
-				System.out.println(who + ", ovvero " + address + ", è raggiungibile!");
-				addressFound = address.toString();
-				nomePeer = who;
+			
+			try {
+				
+				/*Controllo se è raggiungibile*/
+				if (address.isReachable(Constants.TIMEOUT_SEARCH_HOSTS)){
+					
+					addressFound = address.toString();
+					nomePeer = who;
+					
+					/*Provo a collegarmi*/
+					String url = "/" + address.toString() + ":" + Constants.RMI_PORT + "/" + nomePeer;
+					
+					Utils.stampaLogga(who + ", (" + address + ") è raggiungibile, provo conn RMI a: " + url);
+					
+					MyInterface remote = (MyInterface) Naming.lookup(url);
+					
+					Utils.stampaLogga("I miracoli succedono, e in genere dicono: " + remote.whoAreYou());
+					
+					return;
+					
+				}
+				
+				/*Altrimenti ho già finito*/
+				
+			} catch (MalformedURLException e) {
+				//e.printStackTrace();
+			} catch (RemoteException e) {
+				Utils.stampaLogga("---> " + nomePeer + " è raggiungibile ma FORSE non è RMI -_-");
+				//e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				//e.printStackTrace();
+			} catch (NotBoundException e) {
+				Utils.stampaLogga("---> " + nomePeer + " è raggiungibile ma non è RMI!");
+				addressFound = null;
+				nomePeer = null;
 			}
-	
-		} catch (Exception e) {
-			//e.printStackTrace();
+			
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
 		}
+		
+		addressFound = null;
+		nomePeer = null;
+				
 	}
 	
 	/**

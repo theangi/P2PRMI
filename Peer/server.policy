@@ -1,0 +1,3 @@
+grant codeBase "file:/home/matte/TUTTO/WorkspaceSSD" {
+    permission java.security.AllPermission;
+};

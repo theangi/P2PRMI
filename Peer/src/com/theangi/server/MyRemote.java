@@ -18,6 +18,7 @@ import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 
 import com.theangi.misc.Constants;
+import com.theangi.misc.NetworkUtils;
 import com.theangi.misc.Utils;
 import com.theangi.myinterfaces.MyInterface;
 import com.theangi.mystreams.RmiInputStream;
@@ -82,8 +83,13 @@ public class MyRemote extends UnicastRemoteObject implements MyInterface {
 		/*Creo ed esporto il mio rmiregistry*/
 		try {
 			
+			System.setProperty("java.rmi.server.hostname",NetworkUtils.getLocalIP());
+			
 			/*Provo a creare il mio registry! Se questo programma viene eseguito
-			 * una sola volta per singola macchina, non è un problema!*/
+			 * una sola volta per singola macchina, non è un problema!
+			 * Questa operazione è equivalente a lanciare nel terminare il comando "rmiregistry &"
+			 * che attiva in background il servizio
+			 */
 			rmiRegistry = LocateRegistry.createRegistry(Constants.RMI_PORT);
 			
 		} catch (RemoteException e) {
@@ -107,12 +113,14 @@ public class MyRemote extends UnicastRemoteObject implements MyInterface {
 			}
 		}
 		
-		Utils.stampaLogga("Ecco il registry:" + rmiRegistry.toString());
-		Utils.stampaLogga("Lato server, Eseguo bind() con nome " + this.peerID );
+		Utils.stampaLogga("Ecco il registry: " + rmiRegistry.toString());
+		Utils.stampaLogga("Lato server, Eseguo rebind() con nome " + this.peerID );
 
         try {
+        	
         	/*Tutti i miei servizi li esporto con il nome "nodox"*/
 			rmiRegistry.rebind(this.peerID, this);
+			
 		} catch (AccessException e) {
 			Utils.stampaLogga("Impossibile eseguire operazione. Permesso negato in creazione registry!");
 			e.printStackTrace();
