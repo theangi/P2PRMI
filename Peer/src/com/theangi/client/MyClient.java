@@ -125,7 +125,7 @@ public class MyClient{
             	/* ========================== */
             	/* ========================== */
             	/* ========================== */
-            	debug = false;
+            	debug = true;
             	/* ========================== */
             	/* ========================== */
             	/* ========================== */
@@ -142,6 +142,8 @@ public class MyClient{
             		tmp = NetworkUtils.findREALPeers();
             	}
             	
+            	Utils.stampaLogga("LOOP: ho trovato " + tmp.size() + " hosts remoti");
+            	
             	/*Devo aggiornare tutto. Dunque ho varie possibilità:
             	 * 
             	 * Senza fare nulla, il numero di host remoti raggiungibili è cambiato
@@ -153,8 +155,6 @@ public class MyClient{
             	
             	/* Vediamo in remoto cosa è cambiato tmp avrà sempre al suo interno il nome dell'host corrente*/
             	if(listaHostsRemoti.length!=(tmp.size()-1)){
-            		
-            		Utils.stampaLogga("LOOP: ho trovato " + tmp.size() + " hosts remoti");
      		        
             		/*Dall'elenco, rimuovo l'host locale. Funziona solo perchè le stringhe sono immutabili*/
             		tmp.remove(peerId);

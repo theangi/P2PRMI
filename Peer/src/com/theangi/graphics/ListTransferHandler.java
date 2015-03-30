@@ -13,23 +13,11 @@ import javax.swing.JList;
 import com.theangi.misc.Utils;
 import com.theangi.myinterfaces.MyInterface;
 
-/*
- * 
- * Software architect
- * 
- * File new project -> nome a cazzo
- * Core Modeling seleziona tutti uml
- * package --> code engineering --> 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * */
-
+/**
+ * La classe gestisce il drag n drop sia per l'upload che per il download di file
+ * @author matte
+ *
+ */
 public class ListTransferHandler extends StringTransferHandler {
     /**
 	 * 
@@ -128,6 +116,8 @@ public class ListTransferHandler extends StringTransferHandler {
     				e.printStackTrace();
     			}	
         	}
+        } else {
+        	return;
         }
         
         DefaultListModel listModel = (DefaultListModel)target.getModel();

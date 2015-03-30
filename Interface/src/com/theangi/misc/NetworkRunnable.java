@@ -86,7 +86,7 @@ public class NetworkRunnable implements Runnable{
 			} catch (MalformedURLException e) {
 				//e.printStackTrace();
 			} catch (RemoteException e) {
-				Utils.stampaLogga("---> ...peccato, non è RMI (" + e.getClass() + ")");
+				Utils.stampaLogga("---> ...peccato, " + nomePeer + " non è RMI (" + e.getClass() + "). Firewall?");
 				//e.printStackTrace();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
