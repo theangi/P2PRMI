@@ -63,26 +63,36 @@ public class NetworkUtils {
 	}
 	
 	/**
-	 * Torna l'ip del nodo remoto
-	 * @param nodoRemoto
-	 * @return
+	 * Torna l'ip del nodo remoto, semplicemente nella forma 192.168.1.x o quella della rete attuale
+	 * @param nodoRemoto, ad esempio "nodo12"
+	 * @return l'ip corrispondente, ad esempio "192.168.0.12"
 	 */
 	public static String getRemoteIP(String nodoRemoto){
 		
 		/*nodoRemoto è del tipo nodoX. Prendo quindi solo il numero:*/
 		String term = nodoRemoto.substring(nodoRemoto.lastIndexOf("o") + 1, nodoRemoto.length());
 		
+		System.out.println("1 term vale: " + term);
+		
 		if(term=="0" || term == "255"){
 			Utils.stampaLogga("Errore! Impossibile determinare IP dell'host non consentito numero " + term);
 			return null;
 		}
 		
+		/*192.168.1.xxxxxx*/
 		String ip = NetworkUtils.getLocalIP();
 		
-		/*Tolgo la parte più a destra dell'indirizzo*/
-		ip = ip.substring(ip.lastIndexOf(".") + 1);
+		System.out.println("2 ip vale: " + ip);
 		
-		return ip + term;
+		/*Tolgo la parte più a destra dell'indirizzo*/
+		ip = ip.substring(0, ip.lastIndexOf("."));
+		
+		/*Aggiungo .X*/
+		ip+="." + term;
+		
+		System.out.println("3 ip ancora vale: " + ip);
+		
+		return ip;
 		
 	}
 	
@@ -194,27 +204,32 @@ public class NetworkUtils {
     	
     	ArrayList<NetworkRunnable> threads = new ArrayList<NetworkRunnable>();
     	
+    	/*Questo è il numero PIU' UNO di host da cercare. Quindi se messo a 254, vengono cercati i 253 host relativi tra 1 e 254*/
+    	int numeroHostDaRicercare = 15;
+    	
+    	String localIp = NetworkUtils.getLocalIP();
+    	
     	/*Lancio 255 Thread paralleli*/
-    	for(int i=0;i<254;i++){
-    		threads.add(new NetworkRunnable(i, NetworkUtils.getLocalIP()));
+    	for(int i=0;i<numeroHostDaRicercare;i++){
+    		threads.add(new NetworkRunnable(i, localIp));
     	}
     	
     	/*Aspetto tutti abbiano finito*/
-    	for(int i=0;i<254;i++){
+    	for(int i=0;i<numeroHostDaRicercare;i++){
     		try {
 				threads.get(i).t.join();
 			} catch (InterruptedException e) {
-				System.out.println("__________Il Thread " + i + " non è morto bene!");
+				System.out.println("__Il Thread " + i + " non è morto bene!");
 				e.printStackTrace();
 			}
     	}
     	
-    	System.out.println("2__________Sono morti tutti");
+    	System.out.println("__tutti i thread sono morti correttamente");
     	
     	/*Colleziono i risultati*/
     	HashMap<String,String> elenco = new HashMap<String,String>();
     	
-    	for(int i=0;i<254;i++){
+    	for(int i=0;i<numeroHostDaRicercare;i++){
     		String tmp1 = threads.get(i).getAddress();
     		String tmp2 = threads.get(i).getNomePeer();
     		if(tmp1!=null && tmp2!=null){
@@ -222,7 +237,7 @@ public class NetworkUtils {
     		}
     	}
     	
-    	System.out.println("3__________Trovati " + elenco.size() + " elementi!!!!");
+    	System.out.println("__Trovati " + elenco.size() + " elementi!!!!");
     	return elenco;
     	
     }

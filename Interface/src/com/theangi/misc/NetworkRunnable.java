@@ -41,10 +41,8 @@ public class NetworkRunnable implements Runnable{
 			Utils.stampaLogga("Errore! non devo cercare nodo" + numNodo);
 			return;
 		}
-
 		
 		String who = Constants.PREFIX_PEER + numNodo;
-		
 			
 		/*Prendo il mio indirizzo locale da stringa a classe InetAddress*/
 		InetAddress localhost;
@@ -55,7 +53,7 @@ public class NetworkRunnable implements Runnable{
 			byte[] ip = localhost.getAddress();
 			
 			/*Modifico il 4o byte*/
-			ip[3] = (byte)numNodo; //modifico il 3o byte!
+			ip[3] = (byte)numNodo; //modifico il 3o elemento del vettore!
 			
 			/*Questo è l'indirizzo finale*/
 			InetAddress address = InetAddress.getByAddress(ip);
@@ -72,11 +70,12 @@ public class NetworkRunnable implements Runnable{
 					/*Provo a collegarmi*/
 					String url = "/" + address.toString() + ":" + Constants.RMI_PORT + "/" + nomePeer;
 					
-					Utils.stampaLogga(who + ", (" + address + ") è raggiungibile, provo conn RMI a: " + url);
+					Utils.stampaLogga(who + ", (" + address + ") raggiungibile, tento connessione RMI a: " + url);
 					
 					MyInterface remote = (MyInterface) Naming.lookup(url);
 					
-					Utils.stampaLogga("I miracoli succedono, e in genere dicono: " + remote.whoAreYou());
+					Utils.stampaLogga("===> ...CONNESSIONE RIUSCITA con " + remote.whoAreYou() + "!");
+					Utils.stampaLogga("Visto che sono felice dico: " + remote.toString());
 					
 					return;
 					
@@ -87,15 +86,13 @@ public class NetworkRunnable implements Runnable{
 			} catch (MalformedURLException e) {
 				//e.printStackTrace();
 			} catch (RemoteException e) {
-				Utils.stampaLogga("---> " + nomePeer + " è raggiungibile ma FORSE non è RMI -_-");
+				Utils.stampaLogga("---> ...peccato, non è RMI (" + e.getClass() + ")");
 				//e.printStackTrace();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				//e.printStackTrace();
 			} catch (NotBoundException e) {
 				Utils.stampaLogga("---> " + nomePeer + " è raggiungibile ma non è RMI!");
-				addressFound = null;
-				nomePeer = null;
 			}
 			
 		} catch (UnknownHostException e) {

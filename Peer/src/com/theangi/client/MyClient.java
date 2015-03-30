@@ -26,6 +26,8 @@ import com.theangi.myinterfaces.MyInterface;
 
 public class MyClient{
     
+	private boolean debug;
+	
     MyInterface remote;
     
     /*Info del client*/
@@ -123,7 +125,7 @@ public class MyClient{
             	/* ========================== */
             	/* ========================== */
             	/* ========================== */
-            	boolean debug = false;
+            	debug = false;
             	/* ========================== */
             	/* ========================== */
             	/* ========================== */
@@ -178,7 +180,7 @@ public class MyClient{
 	        			/*Nel mondo locale, basta dire "nodox" e va bene*/
 	        			if(!debug){
 	        				/* Ma nel mondo "vero", devo ndicare /192.168.1.x:1099/nodox */
-	        				chi = NetworkUtils.getRemoteIP(chi) + ":" + Constants.RMI_PORT + "/" + chi;
+	        				chi = "//" + NetworkUtils.getRemoteIP(chi) + ":" + Constants.RMI_PORT + "/" + chi;
 	        			}
 	            		
 	        			Utils.stampaLogga("Contatto " + chi + " per vedere se ha dei file nuovi!");
@@ -302,6 +304,11 @@ public class MyClient{
 	        	
 	        	/*Determino cosa ho cliccato*/
 	        	String chi = listaHostsRemoti[cosa.getSelectedIndex()];
+	        	
+	        	if(!debug){
+    				/* Ma nel mondo "vero", devo ndicare /192.168.1.x:1099/nodox */
+    				chi = "//" + NetworkUtils.getRemoteIP(chi) + ":" + Constants.RMI_PORT + "/" + chi;
+    			}
 	        	
 	        	Utils.stampaLogga("Click HOSTS REMOTI: " + cosa.getSelectedIndex() + " ovvero " + chi);
 	        	currentRemoteHostClicked = cosa.getSelectedIndex();
