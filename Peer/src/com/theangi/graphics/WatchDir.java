@@ -128,7 +128,7 @@ public class WatchDir {
                 System.out.format("%s: %s\n", event.kind().name(), child);
                 
                 File[] lista = new File(nomeCartella).listFiles();
-                myClient.setListFileLocali(lista);
+                //myClient.setListFileLocali(lista);
                 myClient.getRoot().refreshFileLocali(lista, -1);
  
                 // if directory is created, and watching recursively, then

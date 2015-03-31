@@ -44,7 +44,7 @@ public class RootFrame extends JFrame {
 	final String nomeNodo;
 	
 	/*I vettori con i dati*/
-	final File[] localFiles;
+	File[] localFiles;
 	String[] remoteHosts;
 	String[] remoteFiles;
 	
@@ -229,15 +229,16 @@ public class RootFrame extends JFrame {
 		} else {
 			Utils.stampaLogga("Aggiorno elenco file locali: " + files.length + " file trovati");
 		}
+		
+		this.localFiles = files;
 
-		jListLocalFiles.clearSelection();
-		jListLocalFiles.removeAll();
+		//jListLocalFiles.clearSelection();
+		//jListLocalFiles.removeAll();
 		jListLocalFiles.setListData(files);
-		jListLocalFiles.validate();
+		//jListLocalFiles.validate();
 		//jListLocalFiles = new JList<File>(files);
 		jListLocalFiles.setCellRenderer(new FileRenderer());
 		
-
 		if(lastSelected >=0 & lastSelected < files.length){
 			jListLocalFiles.setSelectedIndex(lastSelected);
 			Utils.stampaLogga("L'ultima volta era selezionato il " + lastSelected);
@@ -255,10 +256,10 @@ public class RootFrame extends JFrame {
 		
 		this.remoteHosts = hosts;
 
-		jListRemoteHosts.clearSelection();
-		jListRemoteHosts.removeAll();
+		//jListRemoteHosts.clearSelection();
+		//jListRemoteHosts.removeAll();
 		jListRemoteHosts.setListData(hosts);
-		jListRemoteHosts.validate();
+		//jListRemoteHosts.validate();
 		//jListRemoteHosts = new JList<String>(hosts);
 		jListRemoteHosts.setCellRenderer(new HostRenderer(hosts));
 
@@ -267,8 +268,8 @@ public class RootFrame extends JFrame {
 			Utils.stampaLogga("host remoti, L'ultima volta era selezionato il " + lastSelected);
 		}
 
-		scrollPaneHostsRemoti = new JScrollPane();
-		scrollPaneHostsRemoti.removeAll();
+		//scrollPaneHostsRemoti = new JScrollPane();
+		//scrollPaneHostsRemoti.removeAll();
 		scrollPaneHostsRemoti.setViewportView(jListRemoteHosts);
 		scrollPaneHostsRemoti.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
 	}
@@ -282,10 +283,10 @@ public class RootFrame extends JFrame {
 		this.remoteFiles = files;
 
 		//jListRemoteFiles = new JList<String>(files);
-		jListRemoteFiles.clearSelection();
-		jListRemoteFiles.removeAll();
+		//jListRemoteFiles.clearSelection();
+		//jListRemoteFiles.removeAll();
 		jListRemoteFiles.setListData(files);
-		jListRemoteFiles.validate();
+		//jListRemoteFiles.validate();
 		//jListRemoteFiles = new JList<String>(files);
 		jListRemoteFiles.setCellRenderer(new StringRenderer(files));
 		
@@ -298,7 +299,7 @@ public class RootFrame extends JFrame {
 			Utils.stampaLogga("L'ultima volta era selezionato il " + lastSelected);
 		}
 
-		scrollPaneFileRemoti = new JScrollPane();
+		//scrollPaneFileRemoti = new JScrollPane();
 		scrollPaneFileRemoti.setViewportView(jListRemoteFiles);
 		scrollPaneFileRemoti.setBorder(BorderFactory.createEtchedBorder(EtchedBorder.LOWERED));
 		scrollPaneFileRemoti.setVisible(true);

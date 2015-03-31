@@ -193,14 +193,16 @@ public class MyClient{
 	            		
 						/*Aggiorno graficamente l'elenco*/
 						if(tmp2.size() != listaFileRemoti.length){
+							
 							/*Ho appena concluso un download o un upload, non seleziono nulla*/
-							Utils.stampa("--------> Ne aveva di nuovi! Figo ma dimentico cosa avevo selezionato prima");
+							Utils.stampa("--------> L'host remoto ha nuovi file!");
 							listaFileRemoti = tmp2.toArray(new String[tmp2.size()]);
 							root.refreshFileRemoti(listaFileRemoti, -1);
+							
 						} else {
-							Utils.stampa("--------> Non è cambiato un cazzo, ma aggiorno lo stesso");
+							//Utils.stampa("--------> Non è cambiato un cazzo, ma aggiorno lo stesso");
 							/*Lascio selezionato quello correntes*/
-							root.refreshFileRemoti(listaFileRemoti, currentRemoteFileClicked);
+							//root.refreshFileRemoti(listaFileRemoti, currentRemoteFileClicked);
 						}
 						
 	        		} catch (MalformedURLException e) {
@@ -217,7 +219,7 @@ public class MyClient{
 					}
             	}
             }
-         }, 5*1000, 25000); //dopo 5 secondi, ogni 30 secondi
+         }, Constants.LOOP_AFTER, Constants.LOOP_INTERVAL); //dopo 5 secondi, ogni 30 secondi
         
         
         EventQueue.invokeLater(new Runnable() {
